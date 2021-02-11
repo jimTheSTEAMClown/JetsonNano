@@ -108,11 +108,14 @@ echo "sudo docker run --runtime nvidia -it --rm --network host \
     --device /dev/video0 \
     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-r32.4.4" > docker_dli_run.sh
 chmod +x docker_dli_run.sh
-./docker_dli_run.sh
+# ./docker_dli_run.sh
 echo " "
 echo "----------------------------------------------------"
 echo "Done running script"
 echo "----------------------------------------------------"
+echo " "
+echo "You can now run the dicker dli"
+echo "copy and run  ./docker_dli_run.sh"
 elif [ $yesInstall == "n" ] || [ $yesInstall == "N" ]
 then
 echo "Skipping this install"
